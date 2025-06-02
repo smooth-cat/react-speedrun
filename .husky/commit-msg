@@ -3,4 +3,6 @@
 
 npx commitlint --edit "${1}"
 
+echo "Running build and public scripts..."
+
 yarn build && yarn public
