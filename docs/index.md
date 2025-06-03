@@ -7,3 +7,5 @@ hero:
     - text: 开始
       link: /code-analyze/01-prepare
 ---
+
+测试缓存
