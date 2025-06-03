@@ -1,0 +1,11 @@
+.right-top-nav-btn {
+  cursor: pointer;
+  color: #8590a0;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  :hover {
+    color: #dddddd;
+  }
+}

@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 import { writeFileSync } from 'fs';
 import path from 'path';
-
+const publicPath = '/react-speedrun/';
 export default defineConfig({
   chainWebpack(memo) {
 
@@ -22,10 +22,13 @@ export default defineConfig({
     return memo;
   },
   themeConfig: {
-    name: 'react-speedrun',
+    logo: `${publicPath}米龙.png`,
+    name: 'React Speedrun',
+    footer: false,
+    prefersColor: { default: 'dark', switch: false },
   },
-  base: '/react-speedrun/',
-  publicPath: '/react-speedrun/',
-  cssPublicPath: '/react-speedrun/',
-  headScripts: ['window.publicPath = "/react-speedrun/"'],
+  base: publicPath,
+  publicPath: publicPath,
+  cssPublicPath: publicPath,
+  headScripts: [`window.publicPath = '${publicPath}';`],
 });
