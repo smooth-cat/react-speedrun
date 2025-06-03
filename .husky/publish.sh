@@ -26,7 +26,7 @@ git push origin gh-pages-temp:gh-pages --force
 echo "清理临时分支..."
 git branch -D gh-pages-temp
 
-echo "🧹 清理临时提交..."
-git reset HEAD~1 --soft
+# echo "🧹 清理临时提交..."
+# git reset HEAD~1 --soft
 
 echo "✅ 部署成功！"
