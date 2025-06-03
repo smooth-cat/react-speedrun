@@ -2,18 +2,14 @@
   "name": "react-speedrun",
   "version": "0.0.1",
   "description": "a doc for react source code speedrun",
-  "scripts": {
-    "start": "npm run dev",
-    "dev": "dumi dev",
-    "build": "dumi build",
-    "preview": "dumi preview",
-    "public": "git subtree push --prefix dist origin gh-pages",
-    "prepare": "husky install && dumi setup"
-  },
-  "authors": [
-    "milong 987444013@qq.com"
-  ],
   "license": "MIT",
+  "scripts": {
+    "build": "dumi build",
+    "dev": "dumi dev",
+    "prepare": "husky install && dumi setup",
+    "preview": "dumi preview",
+    "start": "npm run dev"
+  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -27,9 +23,13 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@types/react": "^18.3.3",
     "dumi": "^2.4.13",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
-  }
+  },
+  "authors": [
+    "milong 987444013@qq.com"
+  ]
 }
